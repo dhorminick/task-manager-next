@@ -81,7 +81,7 @@ export const TaskCard = ({ task, index }) => {
           ) : (
             <div>
               <h3 className="font-bold text-lg">{task.title}</h3>
-              <p className="text-gray-600">{task.description}</p>
+              <p className="">{task.description}</p>
               <div className="flex justify-between items-center mt-2">
                 <span
                   className={`px-2 py-1 text-xs rounded-full ${
@@ -89,12 +89,12 @@ export const TaskCard = ({ task, index }) => {
                       ? "bg-green-100 text-green-800"
                       : task.status === "in-progress"
                       ? "bg-yellow-100 text-yellow-800"
-                      : "bg-gray-100 text-gray-800"
+                      : "bg-gray-100 "
                   }`}
                 >
                   {task.status.replace("-", " ")}
                 </span>
-                <span className="text-sm text-gray-500">{task.category}</span>
+                <span className="text-sm ">{task.category}</span>
               </div>
               <div className="flex justify-end space-x-2 mt-2">
                 <button

@@ -11,9 +11,7 @@ export const TaskFilters = () => {
       <h3 className="font-bold mb-2">Filters</h3>
       <div className="grid grid-cols-2 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Status
-          </label>
+          <label className="block text-sm font-medium  mb-1">Status</label>
           <select
             value={activeFilters.status || ""}
             onChange={(e) =>
@@ -31,9 +29,7 @@ export const TaskFilters = () => {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700 mb-1">
-            Category
-          </label>
+          <label className="block text-sm font-medium mb-1">Category</label>
           <select
             value={activeFilters.category || ""}
             onChange={(e) =>

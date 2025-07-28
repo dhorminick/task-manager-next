@@ -33,7 +33,7 @@ export const TaskForm = () => {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label className="block text-sm font-medium text-gray-700">Title</label>
+        <label className="block text-sm font-medium ">Title</label>
         <input
           type="text"
           value={task.title}
@@ -43,9 +43,7 @@ export const TaskForm = () => {
         />
       </div>
       <div>
-        <label className="block text-sm font-medium text-gray-700">
-          Description
-        </label>
+        <label className="block text-sm font-medium ">Description</label>
         <textarea
           value={task.description}
           onChange={(e) => setTask({ ...task, description: e.target.value })}
@@ -54,9 +52,7 @@ export const TaskForm = () => {
       </div>
       <div className="grid grid-cols-3 gap-4">
         <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Status
-          </label>
+          <label className="block text-sm font-medium ">Status</label>
           <select
             value={task.status}
             onChange={(e) => setTask({ ...task, status: e.target.value })}
@@ -68,9 +64,7 @@ export const TaskForm = () => {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Category
-          </label>
+          <label className="block text-sm font-medium ">Category</label>
           <select
             value={task.category}
             onChange={(e) => setTask({ ...task, category: e.target.value })}
@@ -83,9 +77,7 @@ export const TaskForm = () => {
           </select>
         </div>
         <div>
-          <label className="block text-sm font-medium text-gray-700">
-            Priority
-          </label>
+          <label className="block text-sm font-medium ">Priority</label>
           <select
             value={task.priority}
             onChange={(e) => setTask({ ...task, priority: e.target.value })}
